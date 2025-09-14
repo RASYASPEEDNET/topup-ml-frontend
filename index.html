@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopUp ML - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TopUp Mobile Legends</h1>
+    
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" placeholder="Masukkan User ID">
+
+    <label for="diamonds">Pilih Diamond:</label>
+    <select id="diamonds">
+      <option value="86">86 Diamonds - Rp20.000</option>
+      <option value="172">172 Diamonds - Rp40.000</option>
+      <option value="257">257 Diamonds - Rp60.000</option>
+      <option value="344">344 Diamonds - Rp80.000</option>
+    </select>
+
+    <label for="payment">Metode Pembayaran:</label>
+    <select id="payment">
+      <option value="qris">QRIS</option>
+      <option value="gopay">GoPay</option>
+      <option value="dana">DANA</option>
+      <option value="ovo">OVO</option>
+    </select>
+
+    <button onclick="submitTopup()">TopUp Sekarang</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
